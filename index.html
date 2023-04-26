@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Store</title>
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="nav-header">
+      <ul class="ul-header">
+        <li class="li-header"><a class="descripcion-lista" href="#">Inicio</a></li>
+        <ul class="li-header"><a class="descripcion-lista" onclick="mostrarLista()" href="#">Categorías</a>
+          <ul id="listaOculta" onclick="ocultarLista()" class="categorías">
+            <li class="subCategorias"><a onclick="ocultarLista()" class="descripcion-oculta"
+                href="#autosAmericanos">Americanos</a></li>
+            <li class="subCategorias"><a class="descripcion-oculta" href="#autoJaponeses">Japoneses</a></li>
+            <li class="subCategorias"><a class="descripcion-oculta" href="#superAutos">Super Autos</a></li>
+          </ul>
+        </ul>
+        <li class="li-header"><a class="descripcion-lista" href="#">Contacto</a></li>
+        <li class="li-header"><a class="descripcion-lista" href="#">Iniciar sesión</a></li>
+      </ul>
+      <img class="logo-empresa" src="./assets/logoempresa.jpeg" alt="logo empresa">
+    </nav>
+    <form class="encabezado-derecho">
+      <input class="barra-buscar" type="search" placeholder="¿Que auto buscas?">
+      <button class="boton-buscar" type="submit">Buscar</button>
+        <img class="carrito" src="./assets/carrito.png" alt="carrito">     
+    </form>
+
+  </header>
+  <main>
+    <section>
+      <h2 class="americanos" id="autosAmericanos">Autos Americanos</h2>
+      <ul>
+        <li class="card-americano">
+          <img src="./assets/ford1967.jpg" alt="ford">
+          <h3 class="titulo-americano">Ford Mustang 1967</h3>
+          <p class="descripcion-ameicanos">En 1967, Carroll Shelby creó Ford Mustang GT350, el primero de una espectacular lista de autos. Tenía un V8
+            modificado de 7L y 428 pulgadas cúbicas de poder, que estaba inspirado en el 1,2,3 de su equipo en Le Mans.
+          </p>
+          <span class="precio">$15.000</span>
+          <button class="agregrar-al-carrito" type="submit">Agregar al carrito</button>
+        </li>
+        <li class="card-americano">
+          <img src="./assets/camaro.jpeg" alt="camaro">
+          <h3 class="titulo-americano">Camaro SS 2010</h3>
+          <p class="descripcion-ameicanos">El Camaro cuenta con un motor 8 cilindros de 6.2 litros el cual ofrece 426 hp (26hp más que la versión
+            automática) y un torque motor de 420lb/pie. El peso de la unidad es de 1,751 kg, con ello la aceleración a
+            los 100 km/hr es en 4.7 segundos.</p>
+          <span class="precio">$40.000</span>
+          <button class="agregrar-al-carrito" type="submit">Agregar al carrito</button>
+        </li>
+        <li class="card-americano">
+
+          <img src="./assets/corvette.jpg" alt="corvette">
+          <h3 class="titulo-americano">Corvette Zr1 2009</h3>
+          <p class="descripcion-ameicanos">El Chevrolet Corvette ZR1 cuenta con un motor delantro longitudinal ocho cilindros en V sobrealimentado que
+            desarolla un par máximo de 820 Nm desde 3800 rpm y una potencia máxima de 647 CV a 6500 rpm transmitida a
+            las ruedas traseras de 20 pulgadas a través una transmisión manual de 6 velocidades.</p>
+          <span class="precio">$60.000</span>
+          <button class="agregrar-al-carrito" type="submit">Agregar al carrito</button>
+
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2 id="autoJaponeses">Autos Japoneses</h2>
+      <ul>
+        <li>
+
+          <img src="./assets/nissangtr.jpeg" alt="nissan">
+          <h3>Nissan GTR34</h3>
+          <p>El Nissan Skyline es un modelo de auto japonés que se ha producido en distintas versiones
+            ininterrumpidamente desde 1957. Sería tras la fusión de los fabricantes Prince y Nissan, cuando comenzó a
+            comercializarse con este nombre. Por estos días, el GTR R34 se ha convertido en el carro más deseado.</p>
+          <span class="precio">$30.000</span>
+          <button class="agregrar-al-carrito" type="submit">Agregar al carrito</button>  
+        </li>
+        <li>
+
+          <img src="./assets/s2000.jpeg" alt="s2000">
+          <h3>Honda s2000</h3>
+          <p>El Honda S2000 es un automóvil deportivo producido por el fabricante japonés Honda desde abril de 1999
+            hasta junio de 2009.
+            Es un descapotable de dos plazas con techo de vinilo de plegado eléctrico, motor central delantero
+            longitudinal y tracción trasera. Tiene un diferencial de deslizamiento limitado Torsen acoplado a una
+            transmisión manual de seis velocidades.</p>
+          <span class="precio">$40.000</span>
+          <button class="agregrar-al-carrito" type="submit">Agregar al carrito</button>   
+        </li>
+        <li>
+
+          <img src="./assets/lancerevo.jpeg" alt="lancer">
+          <h3>Mitsubishi Lancer Evo VII</h3>
+          <p>El Mitsubishi Lancer Evo VII cuenta con un motor delantro transversal cuatro cilindros en línea
+            sobrealimentado que desarolla un par máximo de 383 Nm desde 3500 rpm y una potencia máxima de 280 CV a 6500
+            rpm transmitida a las cuatro ruedas de 17 pulgadas a través una transmisión manual de 5 velocidades.</p>
+          <span class="precio">$60.000</span>
+          <button class="agregrar-al-carrito" type="submit">Agregar al carrito</button>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2 id="superAutos">Super Autos</h2>
+      <ul>
+        <li>
+
+          <img src="./assets/buga.jpg" alt="Bugatti">
+          <h3>Bugatti Chiron</h3>
+          <p>El Bugatti Chiron es un hiperdeportivo de Bugatti, que reemplazó al Bugatti Veyron en 2016. El Bugatti
+            Chiron se caracteriza por ser el vehículo más rápido del mundo, siendo capaz de sobrepasar los 490
+            kilómetros por hora. Es un vehículo revolucionario, más avanzado en todos sus aspectos que su antecesor,
+            pero sin emplear tecnologías híbridas o una construcción rompedora. Cuenta con un impresionante motor W16 de
+            8 litros en posición central, con 1500 CV, que le permite hacer el 0-100 km/h en 2,5 segundos. El precio del
+            Bugatti Chiron es de 2,4 millones de euros y se fábrica en la factoría de Molsheim, Francia, de forma
+            prácticamente artesanal.</p>
+          <span class="precio">Oferta Super Exclusiva</span>
+          <button class="agregrar-al-carrito" type="submit">Agregar al carrito</button>
+        </li>
+        <li>
+
+          <img src="./assets/lambo.jpeg" alt="Lamborghini">
+          <h3>Lamborghini Huracán</h3>
+          <p>Mantiene el mismo motor V10 naturalmente aspirado de 5204 cm³ (5,2 L; 317,6 plg³) heredado del Gallardo,
+            con un diámetro x carrera de 84,5 x 92,8 mm (3,33 x 3,65 plg), distribución de doble (DOHC) árbol de levas
+            por cada bancada de cilindros y 4 válvulas por cilindro (40 en total), distribución de válvulas variable
+            (VVT), lubricación por cárter seco y una relación de compresión de 12,7:1, que desarrolla una potencia
+            máxima de 610 CV (602 HP; 449 kW) y 560 N·m (413 lb·pie) de par máximo,7​ compartido también con el Audi R8
+            4S.
+
+            Para garantizar el equilibrio y el rendimiento, la disposición es de motor central-trasero como se
+            acostumbra desde hace tiempo en la firma. Tiene tanto inyección directa como inyección multipunto de
+            combustible, combinando los beneficios de ambos sistemas y siendo la primera vez que se utiliza esta
+            combinación en un V10.</p>
+            <span class="precio">Oferta Super Exclusiva</span>
+            <button class="agregrar-al-carrito" type="submit">Agregar al carrito</button>
+        </li>
+        <li>
+
+          <img src="./assets/ferrarif40.jpg" alt="ferrarif40">
+          <h3>Ferrari F40</h3>
+          <p>El Ferrari F40 es un automóvil superdeportivo berlinetta de dos puertas biplaza, producido por el
+            fabricante de automóviles italiano Ferrari. Su fabricación comenzó en 1987 con motivo del 40.º aniversario
+            de la fundación de la marca.
+            Su precio, su comportamiento y su concepto lo convirtieron en un clásico instantáneo y hoy en día, es
+            recordado junto al 288 GTO como el último gran Ferrari de la vieja escuela.
+            Un ejemplar que perteneció al piloto de Fórmula 1, Nigel Mansell, fue vendido en 1990 por un precio récord
+            de 1 000 000 £, el cual se mantuvo hasta los años 2010.</p>
+          <span class="precio">Oferta Super Exclusiva</span>
+          <button class="agregrar-al-carrito" type="submit">Agregar al carrito</button>
+        </li>
+        <li>
+
+          <img src="./assets/GT40.jpg" alt="Ford GT40">
+          <h3>Ford GT40 </h3>
+          <p>El Ford GT40 es un automóvil de carreras ganador de las 24 Horas de Le Mans cuatro veces seguidas desde
+            1966 hasta 1969. Fue construido por Ford Motor Company para competir en las carreras de resistencia, y así
+            hacer frente a Ferrari quien ganó en seis ocasiones consecutivas desde 1960 hasta 1965.
+            El automóvil se llamó GT haciendo referencia a Gran Turismo, y el número 40 representa la altura total del
+            vehículo que es de 40 pulgadas (101,6 cm), como dictaban las normas de participación. Se usó un motor V8 en
+            posición longitudinal de 4,7 a 7,0 litros de cilindrada, en comparación al motor V12 de 3,0 litros a 4,0,
+            usado por su rival: el Ferrari 330 P4.</p>
+          <span class="precio">Oferta Super Exclusiva</span>
+          <button class="agregrar-al-carrito" type="submit">Agregar al carrito</button>
+        </li>
+        <li>
+
+          <img src="./assets/lexus.jpeg" alt="Lexus LFA">
+          <h3>Lexus LFA</h3>
+          <p>El Lexus LFA es un automóvil deportivo coupé biplaza de dos puertas, con motor central-delantero montado
+            longitudinalmente y tracción trasera, producido por el fabricante japonés Lexus, subsidiaria de Toyota Motor
+            Corporation. Fue comercializado entre 2010 y 2012 en una serie limitada a 500 unidades, incluyendo 50 coches
+            con paquete "Nürburgring" cuya finalidad era ofrecer mejores cualidades para su uso en circuito.Es el
+            segundo modelo de la línea F, marca de vehículos de alto rendimiento de Lexus.</p>
+          <span class="precio">Oferta Super Exclusiva</span>
+          <button class="agregrar-al-carrito" type="submit">Agregar al carrito</button>
+        </li>
+        <li>
+
+          <img src="./assets/cobra.jpg" alt="ACCobra">
+          <h3>AC Cobra</h3>
+          <p>El AC Cobra es un automóvil deportivo anglo-estadounidense construido en los años de 1962 a 1966 por el
+            fabricante AC Cars. En contra de la creencia popular, no fue este el primer automóvil en utilizar un chasis
+            ligero y una carrocería de aluminio europeos y un potente motor V8 estadounidense, pero posiblemente haya
+            sido el más famoso.</p>
+          <span class="precio">Oferta Super Exclusiva</span>
+          <button class="agregrar-al-carrito" type="submit">Agregar al carrito</button>
+        </li>
+      </ul>
+    </section>
+    <section class="section-contacto">
+      <img class="logo-formulario" src="./assets/logoempresa.jpeg" alt="logo-empresa">
+      <form class="formulario" action="submit">
+        <h3 class="titulo-contacto">Habla con nosotros</h3>
+        <input class="input-nombre" type="text" placeholder="Nombre y Apellido">
+        <textarea class="area-mensaje" name="" id="" cols="50" rows="10" placeholder="Deje su Mensaje"></textarea>
+        <button class="boton-enviar" type="button">Enviar Mensaje</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <section class="footer">
+      <div class="titulo-footer">
+      
+      <p>Tienda de Auto &copy; 2023</p>
+      <p>Desarrollado por Anthony Paiva &copy; 2023</p>
+      </div>
+      <h4 >Nuestras redes</h4>
+      <a href="https://www.linkedin.com/in/amthony-paiva-aguero-0b7002262/" target="blank">
+        <img class="logo-footer" src="./assets/LinkedIn-emblema.jpg" alt="linkedin">
+      </a>
+      <a href="https://www.instagram.com/thonypaiva/" target="blank">
+        <img class="logo-footer" src="./assets/instagram.png" alt="instagran logo">
+      </a>
+      <a href="https://www.facebook.com/anthonypaiva03" target="blank">
+        <img class="logo-footer" src="./assets/logo-facebook.png" alt="logo facebook">
+      </a>
+      <a href="https://github.com/thonypaiva" target="blank">
+        <img class="logo-footer" src="./assets/logo-GitHub.png" alt="github">
+      </a>
+    </section>
+
+  </footer>
+  <script src="./scripts.js"></script>
+</body>
+
+</html>
